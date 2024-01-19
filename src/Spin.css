@@ -1,0 +1,118 @@
+
+.centers{
+    position: relative;
+    text-align: center;
+    /* left: 27%; */
+  } 
+  #SpinWheeliv{
+    height: 324px;
+    width: 281px;
+  }
+  .SpinWheeliv{
+    position: relative;
+    height: 324px;
+    width: 281px;
+    left: 40%;
+    /* transform: translateX(-50%); */
+    box-sizing: border-box;
+    padding: 0 !important;
+    background: url('http://localhost:3000/Group_2022-removebg-preview.png');
+    outline: none !important;
+    /* background: #ffeb3b; */
+  }
+  
+  #center:after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    background: url('http://localhost:3000/gift-2.png');
+    background-color: #BB1F64;
+    background-size: 120px;
+   
+    top: 55%;
+    left: -20%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+  }  
+
+  #wheel{
+    /* background-color: black; */
+    border-radius: 50%;
+    position: absolute;
+    top: 3.187%;
+    left: 3.55%;
+    transform: translate(50%,50%);
+  }
+
+    
+  
+  .SpinWheeliv:after{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('http://localhost:3000/on.png');
+    background-size: 32px;
+    top:75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ 
+  .spin{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+  
+    border-radius: 50%;
+    /* background-image: linear-gradient(to right, red , yellow); */
+   
+    background: url('http://localhost:3000/star.png');
+    border: 4px solid rgba(252, 178, 19, 0.822);
+    background-color: #ff5722;
+    
+  
+    cursor: pointer;
+  }
+  
+  .SpinWheeliv.animate:after{
+   
+    animation: animateArrow 0.7s ease infinite;
+  
+  }
+  @keyframes animateArrow{
+    20%{
+        bottom:10px;
+    }
+  }
+  
+  #spin-btn{
+    border: 1px solid #0082BC;
+    border-radius: 11px;
+    color: #636363;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    height: 42px;
+  }
+  
+#spin-win{
+  font-family: League Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #BB1F64;
+    /* margin-top: 3%; */
+}
+
+.SpinCoinBtn{
+  text-align: center;
+  margin-top: 1%;
+}
